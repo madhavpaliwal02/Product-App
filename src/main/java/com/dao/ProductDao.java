@@ -32,7 +32,8 @@ public class ProductDao {
 		return (Product)this.hibernateTemplate.get(Product.class, pid);
 	}
 	
-	
+	// delete a product
+	@Transactional
 	public void deleteProduct(int pid) {
 		this.hibernateTemplate.delete(getProduct(pid));
 	}
