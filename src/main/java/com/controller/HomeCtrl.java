@@ -1,6 +1,7 @@
 package com.controller;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
@@ -12,7 +13,8 @@ public class HomeCtrl {
 	}
 
 	@RequestMapping("/add-product")
-	public String addProduct() {
+	public String addProduct(Model m) {
+		m.addAttribute("title", "Add-Product");
 		return "add_product_form";
 	}
 

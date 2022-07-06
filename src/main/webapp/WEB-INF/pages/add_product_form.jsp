@@ -4,6 +4,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
+	<%@ include file="./base.jsp" %>
 <title>Add Product</title>
 </head>
 <body>
