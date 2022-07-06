@@ -24,10 +24,9 @@
 					</div>
 
 					<div class="form-group">
-						<label for="product-desc">Product Description</label> <input
-							type="textarea" class="form-control" id="product-desc"
-							name="description" aria-describedby="emailHelp"
-							placeholder="Enter the Description">
+						<label for="product-desc">Product Description</label>
+						<textarea class="form-control" id="product-desc" rows="5"
+							name="description" placeholder="Enter the Description"></textarea>
 					</div>
 
 					<div class="form-group">
