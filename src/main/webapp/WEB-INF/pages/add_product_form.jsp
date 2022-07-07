@@ -34,11 +34,6 @@
 							type="text" class="form-control" id="product-price" name="price"
 							placeholder="Enter the Price">
 					</div>
-					<div class="form-check">
-						<input type="checkbox" class="form-check-input" id="exampleCheck1">
-						<label class="form-check-label" for="exampleCheck1">Check
-							me out</label>
-					</div>
 
 					<div class="container text-center">
 						<a href="${pageContext.request.contextPath }/"
