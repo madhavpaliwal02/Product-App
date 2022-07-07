@@ -37,16 +37,18 @@
 								<td>${p.name }</td>
 								<td>${p.description }</td>
 								<td class="font-weight-bold">&#x20B9; ${p.price }</td>
-								<td></td>
+								<td><a href="delete/${p.id }"> <i
+										class="fa-solid fa-trash-can text-danger"
+										style="font-size: 25px"></i></a></td>
 							</tr>
 
 						</c:forEach>
 
 					</tbody>
 				</table>
-				
+
 				<div class="container text-center">
-					<a href="add-product" class="btn btn-outline-success" >Add-Product</a>
+					<a href="add-product" class="btn btn-outline-success">Add-Product</a>
 				</div>
 
 			</div>
