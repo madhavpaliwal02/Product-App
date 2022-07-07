@@ -36,7 +36,7 @@
 								<th scope="row">${p.id }</th>
 								<td>${p.name }</td>
 								<td>${p.description }</td>
-								<td>${p.price }</td>
+								<td class="font-weight-bold">&#x20B9; ${p.price }</td>
 								<td></td>
 							</tr>
 
