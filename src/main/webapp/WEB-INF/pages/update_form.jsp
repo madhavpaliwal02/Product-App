@@ -13,32 +13,37 @@
 		<div class="row">
 			<div class="col-md-6 offset-md-3">
 
-				<h1 class="text-center mb-3">Fill the product details</h1>
+				<h1 class="text-center mb-3">Change product details</h1>
 
-				<form action="handle-product" method="post">
+				<form action="${pageContext.request.contextPath }/handle-product"
+					method="post">
+
+					<div class="form-group">
+						<input type="hidden" name="id" value="${product.id }">
+					</div>
 
 					<div class="form-group">
 						<label for="product-name">Product Name</label> <input type="text"
 							class="form-control" id="product-name" name="name"
-							aria-describedby="emailHelp" placeholder="Enter the Name">
+							aria-describedby="emailHelp" value="${product.name }">
 					</div>
 
 					<div class="form-group">
 						<label for="product-desc">Product Description</label>
 						<textarea class="form-control" id="product-desc" rows="5"
-							name="description" placeholder="Enter the Description"></textarea>
+							name="description">${product.description }</textarea>
 					</div>
 
 					<div class="form-group">
 						<label for="product-price">Product Price</label> <input
 							type="text" class="form-control" id="product-price" name="price"
-							placeholder="Enter the Price">
+							value="${product.price }">
 					</div>
 
 					<div class="container text-center">
 						<a href="${pageContext.request.contextPath }/"
-							class="btn btn-outline-danger">Back</a>
-						<button type="submit" class="btn btn-primary">Add</button>
+							class="btn btn-outline-warning">Back</a>
+						<button type="submit" class="btn btn-primary">Update</button>
 					</div>
 
 

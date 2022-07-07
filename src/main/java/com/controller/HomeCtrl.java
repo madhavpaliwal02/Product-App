@@ -29,6 +29,7 @@ public class HomeCtrl {
 		return "index";
 	}
 
+	// add product form
 	@RequestMapping("/add-product")
 	public String addProduct(Model m) {
 		m.addAttribute("title", "Add-Product");
@@ -55,4 +56,20 @@ public class HomeCtrl {
 		return redirectView;
 	}
 
+	
+	@RequestMapping("/update/{productId}")
+	public String updateForm(@PathVariable("productId") int pid, Model m, HttpServletRequest request) {
+		
+		Product product = this.productDao.getProduct(pid);
+		m.addAttribute("product", product);
+		return "update_form";
+	}
+
+	
+
+	
+	
+	
+	
+	
 }

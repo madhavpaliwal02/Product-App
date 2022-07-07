@@ -38,7 +38,8 @@
 								<td>${p.description }</td>
 								<td class="font-weight-bold">&#x20B9; ${p.price }</td>
 								<td><a href="delete/${p.id }"> <i
-										class="fa-solid fa-trash-can text-danger"
+										class="fas fa-trash-can text-danger" style="font-size: 25px"></i></a>
+									<a href="update/${p.id }"> <i class="fas fa-pen"
 										style="font-size: 25px"></i></a></td>
 							</tr>
 
