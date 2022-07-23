@@ -64,12 +64,4 @@ public class HomeCtrl {
 		m.addAttribute("product", product);
 		return "update_form";
 	}
-
-	
-
-	
-	
-	
-	
-	
 }
