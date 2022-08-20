@@ -1,0 +1,3 @@
+com\controller\HomeCtrl.class
+com\dao\ProductDao.class
+com\entities\Product.class
